@@ -4,35 +4,34 @@ Black fungus detection from images using deep learning algorithms
 
 # Data Augumentation
 
-  ![image](https://user-images.githubusercontent.com/72508066/229501955-9f5daddf-8fbb-4b3a-8818-44aa4e87b575.png) <br>
+  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/data_aug_1.png" width="50%" height="50%" > <br>
  We are augmenting all images based on the rotation range, width shift range, height shift range, shear range, zoom range, horizontal flip, channel shift range and fill mode.<br>
-  ![image](https://user-images.githubusercontent.com/72508066/229502151-2b801c82-e2d0-4925-863d-443606181505.png)<br>
+  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/data_aug_2.png" width="50%" height="50%" > <br>
 	For skin disease Eczema we are generating 10 different images from one image. <br>
 # Data Pre processing 
-  ![image](https://user-images.githubusercontent.com/72508066/229502545-c4b93432-62df-4311-80fe-19d1d3386db7.png)<br>
+  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/data_pre_1.PNG" width="50%" height="50%" > <br>
   Here we are importing split folders and splitting the whole dataset into train(70%), validation(20%) and test(10%). <br>
   Rescaling each image and keeping each target image size same (i.e, 224X224 ). <br>
-  ![image](https://user-images.githubusercontent.com/72508066/229502626-d2d1ca3e-4b22-4bfd-ad58-ec18ff3f2246.png)<br>
+  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/data_pre_2.PNG" width="50%" height="50%" > <br>
   Here applying Adam optimizer with learning rate of 0.0001( very less for more effective learning) <br>
 
 # CNN Model
 
 # Training with Deep Learning Models
-- Xception
-  ![image](https://user-images.githubusercontent.com/72508066/229503976-deb026ff-c8af-4b54-b125-8f0487478d9a.png)<br>
+- Xception <br>
+  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_xception_1.png" width="70%" height="70%" > <br>
   Here we are using model check pointing and callbacks to save the model only if there is any increase in validation accuracy which helps in getting rid of the model overfitting. <br>
   Taking total number of epochs are 15 and batch size is 128. <br>
-  ![image](https://user-images.githubusercontent.com/72508066/229504050-312bf9b9-6281-4268-b6fc-4ed4711e1684.png)<br>
+  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_xception_2.png" width="70%" height="70%" > <br>
   We got training accuracy of 99% and validation accuracy of 90% <br>
-  ![image](https://user-images.githubusercontent.com/72508066/229504106-1dbe4af0-97a1-4009-9d3d-7803c380c5be.png)<br>
-
-- DenseNet121
-  ![image](https://user-images.githubusercontent.com/72508066/229507694-3814798c-a7e7-4320-8b83-f394d080796b.png)<br>
-  ![image](https://user-images.githubusercontent.com/72508066/229507713-00b06d55-8670-4cb2-a5bb-d5a865502d3a.png)<br>
+  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_xception_3.png" width="40%" height="40%" > <br>
+- DenseNet121 <br>
+  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_densenet_1.png"  width="70%"  height="40%" > <br>
+  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_densenet_2.png" width="40%" height="40%"  > <br>
   Here we plot graph between accuracy and total epochs. This is helpful for checking the model overfitting. <br>
   With the same dataset and with DenseNet121 model we got training accuracy of 96% and validation accuracy of 87%, this results are till 8th epoch. Then model started overfitting.<br>
 
-- MobileNetV2 
+- MobileNetV2  <br>
   ![image](https://user-images.githubusercontent.com/72508066/229507791-f17f707f-cee9-409f-b649-6edcbc42c4b9.png)<br>
   With the same dataset and with MobileNetV2 model we got training accuracy of 98.33% and validation accuracy of 70.9% after running all the epochs.  <br>
   ![image](https://user-images.githubusercontent.com/72508066/229507872-ea61b10e-8a06-4ad8-8526-de0801130239.png)<br>
