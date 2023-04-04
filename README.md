@@ -1,5 +1,9 @@
 # Black-Fungus-Detection
-Black fungus detection from images using deep learning algorithms
+The deep learning project aims to develop a model for detecting the black fungus disease based on images of patients. The project involves the use of a convolutional neural network (CNN) to analyze and classify medical images of patients with suspected black fungus disease.
+
+A large dataset of medical images is collected from patients diagnosed with black fungus disease. The dataset is then pre-processed, and data augmentation techniques are applied to increase the variety and quantity of images. The pre-processed images are then used to train the CNN model.
+
+The trained model is then tested on a separate set of images to evaluate its performance. 
 
 
 # Data Augumentation
