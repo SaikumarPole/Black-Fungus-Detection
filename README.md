@@ -21,44 +21,11 @@ The trained model is then tested on a separate set of images to evaluate its per
 
 # Training with Deep Learning Models
 - Xception <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_xception_1.png" width="70%" height="70%" > <br>
-  Here we are using model check pointing and callbacks to save the model only if there is any increase in validation accuracy which helps in getting rid of the model overfitting. <br>
-  Taking total number of epochs are 15 and batch size is 128. <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_xception_2.png" width="70%" height="70%" > <br>
-  We got training accuracy of 99% and validation accuracy of 90% <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_xception_3.png" width="40%" height="40%" > <br>
 - DenseNet121 <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_densenet_1.png"  width="70%"  height="40%" > <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_densenet_2.png" width="40%" height="40%"  > <br>
-  Here we plot graph between accuracy and total epochs. This is helpful for checking the model overfitting. <br>
-  With the same dataset and with DenseNet121 model we got training accuracy of 96% and validation accuracy of 87%, this results are till 8th epoch. Then model started overfitting.<br>
-
 - MobileNetV2  <br>
-  <img scr="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_mobile_1.png" width="40%" height="40%" /> <br>
-  With the same dataset and with MobileNetV2 model we got training accuracy of 98.33% and validation accuracy of 70.9% after running all the epochs.  <br>
-  <img scr="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_mobile_2.png" width="40%" height="40%" /> <br>
-
 - VGG16 <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_vgg16_1.png" width="60%" height="60%" > <br>
-  With the same dataset and with VGG16 model we got training accuracy of 89.6% and validation accuracy of 81% after running all the epochs.<br>  
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_vgg16_2.png" width="40%" height="40%" > <br>
-  Here we plot graph between accuracy and total epochs for VGG-16 Model. This is helpful for checking the model overfitting. It is overfitting after 7th epoch  approximately. <br>
 - VGG19 <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_vgg19_1.png" width="60%" height="60%" > <br>
-  With VGG 19 model we got training accuracy of 95.48% and validation accuracy of 83.5% after running epochs upto 13. <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_vgg19_2.png" width="40%" height="40%" > <br>
-  Here we plot graph between accuracy and total epochs for VGG-19 Model. This is helpful for checking the model overfitting. It is overfitting after 6th epoch approximately. <br>
 - Own CNN Model <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_own_1.png" width="60%" height="60%" > <br>
-  Sequential() is the initialization of the model. 
-  add() function adds different layers to existing model 
-  Con2D() is convolution layer which works on each and every image based on strides, padding. 
-  Dense() layer adds activation functions to the model i.e adds non-linearity to the model. 
-  summary() describes about type of layer present and its parameters. <br>
-  <img src="https://github.com/SaikumarPole/Black-Fungus-Detection/blob/main/images/train_own_2.png" width="40%" height="40%" > <br>
-  With Own model we got training accuracy of 48.9% and validation accuracy of 40.6% after running epochs upto 13.  
-  Here we plot graph between accuracy and total epochs for Own Model. This is helpful for checking the model overfitting. It is overfitting after 2nd epoch approximately. After 5th epoch model is not learning as we can see training and validation accuracy are same. 
-
 
 # Test And Result 
 - Xception <br>
